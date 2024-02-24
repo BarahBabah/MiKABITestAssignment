@@ -1,0 +1,15 @@
+Create a Webpage
+
+1) You must use Vue.js to implement this interface.
+2) The answer options should be radio buttons, and there should be the ability to click on them.
+3) It's preferable that the task text, task conditions ("Choose the right answer"), task image, correct_answer, and answer options are located in a JSON file.
+4) Use a grid system. The page should be responsive and work on all devices (responsive design on different devices at your discretion).
+5) When "check" button clicked, system must check if selected answer option is correct. And alert user of a result. After alert, all button selection must be cleared.
+6) When the light bulb is pressed, a modal window should appear at the center of the screen. Within the modal window, there should be a button to close it.
+7) Ensure your code is both simple and clean.
+
+Questions and Answers:
+
+1) What should the Cross and Lightbulb buttons do? They should have no functionality, remain inactive.
+2) Should we disregard the content of the question image and store the answer in JSON? Yes.
+3) What is the user flow? The child purportedly clicks on button A, B, or C, and what happens next? The child clicks on A, B, or C, then clicks "Check," and subsequently sees if they answered correctly or not. Refer to point 5.
