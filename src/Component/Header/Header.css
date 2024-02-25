@@ -1,0 +1,22 @@
+.user {
+    margin-top: 20px;
+    margin-right: 20px;
+    margin-left: auto;
+    grid-area: user;
+}
+.username {
+    padding: 0;
+    margin: 0;
+}
+.coin {
+    margin: 0;
+}
+.coin::after {
+    content: '';
+    background-image: url(./../../assets/coin.png);
+    width: 25px;
+    height: 25px;
+    vertical-align: middle;
+    display: inline-block;
+    margin-left: 15px;
+}

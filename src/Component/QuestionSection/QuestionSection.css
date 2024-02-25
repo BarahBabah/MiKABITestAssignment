@@ -1,0 +1,41 @@
+.button__close {
+    margin-left: 20px;
+    background: url('/src/assets/close_btn.png') no-repeat center whitesmoke;
+    grid-area: close;
+    width: 50px;
+    height: 50px;
+    border-radius: 16%;
+}
+.button__hint {
+    margin-right: 20px;
+    background-color: whitesmoke;
+    background: url('/src/assets/bulb.png') no-repeat center whitesmoke;
+
+    width: 50px;
+    height: 50px;
+    border-radius: 16%;
+    grid-area: hint;
+}
+
+.question-section {
+    grid-area: question-section;
+    text-align: center;
+}
+.question-section__title {
+    margin: 0;
+    padding: 0;
+}
+.question-section__paragraph {
+    margin: 0;
+    padding: 0;
+    margin-top: 20px;
+}
+.question {
+    margin: auto;
+}
+.question-image {
+    grid-area: question-image;
+
+    width: 100%;
+    height: auto;
+}
