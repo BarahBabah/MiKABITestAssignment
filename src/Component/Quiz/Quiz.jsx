@@ -31,6 +31,9 @@ const Quiz = () => {
         setOpenModal(true);
         setModalContent(`Correct answer: ${correct_answer}`);
     };
+    const onClose = () => {
+        setOpenModal(false);
+    };
 
     return (
         <main className="main">
@@ -51,7 +54,7 @@ const Quiz = () => {
                 </div>
             </div>
             {openModal && (
-                <Modal setOpenModal={setOpenModal}>
+                <Modal onClose={onClose}>
                     <p className="hint__paragraph">{modalContent}</p>
                 </Modal>
             )}

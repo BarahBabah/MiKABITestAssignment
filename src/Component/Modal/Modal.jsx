@@ -2,12 +2,12 @@ import { useRef, useEffect, useCallback } from 'react';
 import styles from './Modal.module.css';
 import PropTypes from 'prop-types';
 
-const Modal = ({ children, setOpenModal }) => {
+const Modal = ({ children, onClose }) => {
     const modalRef = useRef();
 
     const handleModalClose = useCallback(() => {
-        setOpenModal(false);
-    }, [setOpenModal]);
+        onClose();
+    }, [onClose]);
 
     useEffect(() => {
         const handleOutsideClick = (event) => {
@@ -29,7 +29,7 @@ const Modal = ({ children, setOpenModal }) => {
             document.removeEventListener('mousedown', handleOutsideClick);
             document.removeEventListener('keydown', handleKeyPress);
         };
-    }, [handleModalClose, setOpenModal]);
+    }, [handleModalClose]);
 
     return (
         <div className={styles['modal']}>
@@ -45,7 +45,7 @@ const Modal = ({ children, setOpenModal }) => {
 
 Modal.propTypes = {
     children: PropTypes.node.isRequired,
-    setOpenModal: PropTypes.func.isRequired,
+    onClose: PropTypes.func.isRequired,
 };
 
 export default Modal;
