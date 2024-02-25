@@ -54,7 +54,7 @@ const Quiz = () => {
                 </div>
             </div>
             {openModal && (
-                <Modal onClose={onClose}>
+                <Modal onClose={onClose} openModal={openModal}>
                     <p className="hint__paragraph">{modalContent}</p>
                 </Modal>
             )}

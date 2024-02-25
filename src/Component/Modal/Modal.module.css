@@ -19,6 +19,14 @@
     max-width: 80%;
     max-height: 80%;
     overflow-y: auto;
+    transform: scale(0.8);
+    transition: transform 0.3s ease;
+}
+.modal.open .modal-content {
+    transform: scale(1);
+}
+.modal.closing .modal-content {
+    transform: scale(0.2);
 }
 .close {
     color: #aaa;
